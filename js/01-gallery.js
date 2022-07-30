@@ -23,12 +23,9 @@ function clickImg(e) {
       `);
   instance.show();
 
-  console.log(e);
   window.addEventListener("keyup", (e) => {
     if (instance.visible() && e.keyCode === 27) {
       instance.close();
-      console.log(e.code);
-      //27
     }
   });
 }
